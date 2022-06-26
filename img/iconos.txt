@@ -1,0 +1,185 @@
+droplet: <i class="fa-solid fa-droplet"></i> fontawesome
+cotton: <i class="fa-brands fa-cotton-bureau"></i> fontawesome
+leaf: <i class="fa-solid fa-leaf"></i> fontawesome
+sack-dolar: <i class="fa-solid fa-sack-dollar"></i> fontawesome
+trowel: <i class="fa-solid fa-trowel"></i> fontawesome
+
+
+* {
+    margin: 0px;
+    padding: 0px; 
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; 
+}
+
+.img-fondo {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 10px;
+    gap: 10px;
+    position: absolute;
+    width: 1345px;
+    height: 528px;
+    left: 0px;
+    top: 100px;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url(imgblog.png);
+}
+
+.cards-info {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 20px;
+    gap: 10px;
+    position: absolute;
+    width: 800px;
+    height: 364px;
+    left: 33px;
+    top: 670px;
+    border: 1px solid #000000;
+    border-radius: 20px;
+}
+
+.img-cards{
+    position: relative;
+    right: 0px;
+    width: 305px;
+    height: 308px; 
+    border-radius: 15px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.fecha-info{
+    position: relative;
+    left:17px;
+    bottom: 135px;
+    font-size: 20px;
+}
+
+.parrafo-info{
+    position: relative;
+    right: 80px;
+    bottom: 30px;
+    font-size: 22px;
+    
+}
+
+.contenedor-economia{
+    border: 2px solid #E5E5E5;
+    border-radius: 10px;
+    margin-left: 100px;
+    position: absolute;
+    margin-top: 200px;
+    font-size: 22px;
+    color: #81C132;
+    width: 180px;
+    height: 20px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.parrafo-economia{
+    position: relative;
+    bottom: 27px; 
+}
+
+.contenedor-naturaleza{
+    border: 2px solid #E5E5E5;
+    border-radius: 10px;
+    margin-left: 550px;
+    position: absolute;
+    margin-top: 200px;
+    font-size: 24px;
+    color: #81C132;
+    width: 130px;
+    height: 20px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+
+.parrafo-naturaleza{
+    position: relative;
+    bottom: 27px; 
+}
+
+.card-2{
+    margin-top: 400px;
+}
+
+.contenedor-buscar{
+    margin-top: 670px;
+    position: absolute;
+    margin-left: 1000px;
+    border: 2px solid #E5E5E5;
+    height: 140px;
+    width: 250px;
+  
+}
+
+.input-search{
+    position: relative;
+    top: 20px;
+    left: 20px;
+    height: 30px;
+    border: 2px solid #E5E5E5;
+    width: 200px;
+}
+
+input[type="text"]::placeholder {
+    padding-left: 10px;
+    color: #81C132;
+    opacity: 0.4;
+    font-size: 17px;
+}
+
+.button-search {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 34px;
+    gap: 10px;
+    width: 210px;
+    height: 35px;
+    background: #81C132;
+    margin-top: 40px;
+    margin-left: 20px;
+    border: none;
+    cursor: pointer;
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.contenedor-secciones{
+    position: absolute;
+    margin-top: 850px;
+    margin-left: 1000px;
+    border: 2px solid #E5E5E5;
+    width: 250px;
+    height: 340px;
+}
+
+.title-secciones{
+    text-align: center;
+    margin-top: 50px;
+    font-weight: bold
+}
+
+ul{
+    margin-left: 20px;
+    margin-top: 20px;
+}
+.lista-secciones{
+    padding-top: 10px;
+    color: #81C132;
+    font-weight: 400;
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Css/login.css">
+    <title>Iniciar Sesión</title>
+
+</head>
+<body>
+    <header class="header">
+            <div class="navbar-flex">
+                <a href="index.html"><img src="/img/logo_index.png" class="logo-img" width="100px" id="img"></a>
+                <nav id="navbar-style" class="navbar-style">
+                    <ul>
+                    <li><a class= "navlink"  href="index.html">Inicio</a></li>
+                    <li><a class= "navlink"  href="iniciosesion.html">Iniciar Sesion</a></li>
+                    <li><a class= "navlink"  href="Formulario.html">Registrarse</a></li>
+                    <li><a class= "navlink"  href="Blog.html">Blog</a></li>
+                    <li><a class= "navlink"  href="Contacto.html">Contacto</a></li>
+                    <li><a class= "navlink"  href="#"><img src="/img/bag-156780_960_720.png" alt="Tienda" style="width: 30px;"></a></li>
+                    </ul>
+                </nav>   
+            </div>
+    </header>
+    
+    <section class="login">
+        <p class="title-login">Iniciar Sesión</p>
+        <div class="box-login">
+            <form class="form-login" action="login.php" method="post">
+                <label class="label" id="label" for="nombre"> Usuario </label> <br>
+                <input class="formulario" type="text" name="nombre" id="nombre" required> <br>
+
+                <label class="label" for="password" id="label"> Contraseña </label> <br>
+                <input class="formulario password" type="password" id="password" name="password" required> <br>
+                        
+                <button class="boton" type="submit" name="login"> Iniciar Sesión </button> <br>
+            </form>    
+            <p class="register-login">¿No tienes una cuenta? <a href="formulario.html" class="register-login link">Registrate aquí</a> </p>
+        </div>        
+    </section>
+
+    <footer class="footer">
+            <div class="footer-flex">
+                <div class="left">
+                    <p class="left-main-text">Sobre nosotros</p>
+                    <p class="left-text">Reciclarte surge para intentar concientizar acerca de los <br> peligros que produce la contamincion ambiental y los <br> problemas que vendràn si no se actùa a tiempo.</p>
+                </div>
+                <div class="right">
+                    <p class="right-text">Nuestras redes</p>
+                    <div class="social-contact">
+                        <a href="https://www.facebook.com/"><img class="img-social-contact" src="img/facebook.png" alt=""></a>
+                        <a href="https://twitter.com/"><img class="img-social-contact" src="img/gorjeo.png" alt=""></a>
+                        <a href="https://ar.linkedin.com/"><img class="img-social-contact" src="img/linkedin.png" alt=""></a>
+                        <a href="https://www.youtube.com/"><img class="img-social-contact" src="img/youtube.png" alt=""></a>
+                        <a href="https://www.instagram.com/"><img class="img-social-contact" src="img/instagram.png" alt=""></a>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="hr-footer">
+
+            <p class="copyright">Córdoba recicla 2022 | Todos los derechos reservados.</p>
+    </footer>
+    
+<script src="https://kit.fontawesome.com/b545c92e40.js" crossorigin="anonymous"></script>
+<script src="password.js"></script>
+</body>
+</html>
+</body>
+</html>
