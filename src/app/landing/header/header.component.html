@@ -3,21 +3,25 @@
         <a href="index.html"><img src="../.../../../assets/img/logo_index.png" class="logo-img" width="100px" id="img"></a>
         <nav id="navbar-style" class="navbar-style">
             <ul>
-            <li><a class= "navlink"  href="index.html">Inicio</a></li>
-            <li><a class= "navlink"  href="iniciosesion.html">Iniciar Sesion</a></li>
-            <li><a class= "navlink"  href="Formulario.html">Registrarse</a></li>
+            <li><a class= "navlink"  href="index.html"> {{ 'inicio' | translate }}</a></li>
+            <li><a class= "navlink"  href="iniciosesion.html">{{ 'inicio_sesion' | translate }}</a></li>
+            <li><a class= "navlink"  href="Formulario.html">{{ 'registro' | translate }}</a></li>
             <li><a class= "navlink"  href="Blog.html">Blog</a></li>
-            <li><a class= "navlink"  href="Contacto.html">Contacto</a></li>
-            <li><a class= "navlink"  href="#"><img src="../../assets/img/bag-156780_960_720.png" alt="Tienda" style="width: 30px;"></a></li> 
+            <li><a class= "navlink"  href="Contacto.html">{{ 'contacto' | translate }}</a></li>
+            <li><a class= "navlink"  href="#"><img src="../../assets/img/bag-156780_960_720.png" alt="Tienda" style="width: 30px;"></a></li>  
+                <select (change)="selectLanguage($event)" class="language-picker">
+                    <option class="language-picker-one" value="es-ES">Español</option>
+                    <option selected class="language-picker-two" value="en-US">Ingles</option>
+                </select>           
             </ul>
         </nav>   
     </div>
     <section class="main">
         <div class="main-flex">
-            <p class="hashtag">#Savetheworld</p>
-            <p class="big-text"><strong>RE</strong>CICLA, <strong>RE</strong>UTILIZA, <strong>RE</strong>DUCE, <br> <strong>RE</strong>PARA...</p>
-            <p class="normal-text">Por ti, por mi, por todos.</p>
-            <a href="#" class="view-more">VER MAS</a>
+            <p class="hashtag">{{ 'hashtag' | translate }}</p>
+            <p class="big-text"><strong>{{ 'Acronimo' | translate }}</strong>{{ 'recicla' | translate }}, <strong>{{ 'Acronimo' | translate }}</strong>{{ 'reuse' | translate }}, <strong>{{ 'Acronimo' | translate }}</strong>{{ 'reduces' | translate }}, <br> <strong>{{ 'Acronimo' | translate }}</strong>{{ 'repair' | translate }}...</p>
+            <p class="normal-text">{{ 'for' | translate }}</p>
+            <a href="#" class="view-more">{{ 'view_more' | translate }}</a>
         </div>
     </section>
     <div class="wave" style="overflow: hidden;">

@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { TranslateService } from '@ngx-translate/core';
+
 
 @Component({
   selector: 'app-root',
@@ -6,5 +8,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'cbaRecicla';
+  title = 'angular-internationalization';
+  constructor(public translateService: TranslateService) {
+    
+  }
+
+ 
+public selectLanguage(event: any){
+   this.translateService.use(event.target.value);
+}
+
 }
