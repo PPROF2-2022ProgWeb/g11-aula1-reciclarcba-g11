@@ -1,0 +1,84 @@
+<app-header></app-header>
+<div class="register-flex">
+    <h2 class="register-title">¡Crea tu cuenta!</h2>
+    <div class="register">
+        <form class="register-form" (ngSubmit)="onSubmit(contactForm.value)" [formGroup]="contactForm">
+            <label for="user" class="form-label fs-5" id="label-user" >Nombre</label>
+            <input type="text" class="form-control border-success border-opacity-50" id="user" formControlName="nombre" required> <br>
+            <div class="color-validator" *ngIf="contactForm.get('nombre')?.touched && contactForm.get('nombre')?.errors?.['invalid']">
+                Usuario incorrecto
+             </div>
+             <div class="color-validator" *ngIf="contactForm.get('nombre')?.errors?.['required']">
+                Este campo es requerido
+             </div>
+            <label for="surname" class="form-label fs-5" id="label-pass">Apellido</label>
+            <input type="text" class="form-control border-success border-opacity-50" id="surname" formControlName="apellido" required> <br>
+            <div class="color-validator" *ngIf="contactForm.get('apellido')?.touched && contactForm.get('apellido')?.errors?.['invalid']">
+                Apellido incorrecto
+             </div>
+             <div class="color-validator" *ngIf="contactForm.get('apellido')?.errors?.['required']">
+                Este campo es requerido
+             </div>
+            <label for="email" class="form-label fs-5" id="label-user">Email</label>
+            <input type="text" class="form-control border-success border-opacity-50" id="email" formControlName="email" required pattern="'/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/'"> <br>
+            <div class="color-validator" *ngIf="contactForm.get('email')?.touched && contactForm.get('email')?.errors?.['invalid']">
+                Email incorrecto
+             </div>
+             <div class="color-validator" *ngIf="contactForm.get('email')?.errors?.['required']">
+                Este campo es requerido
+             </div>
+            <label for="birthday" class="form-label fs-5" id="label-pass">Fecha de nacimiento</label>
+            <input type="date" class="form-control border-success border-opacity-50" id="birthday" formControlName="fecha_nac" required> <br>
+            <div class="color-validator" *ngIf="contactForm.get('fecha_nac')?.touched && contactForm.get('fecha_nac')?.errors?.['invalid']">
+                Fecha incorrecto
+             </div>
+             <div class="color-validator" *ngIf="contactForm.get('fecha_nac')?.errors?.['required']">
+                Este campo es requerido
+             </div>
+            <label for="password" class="form-label fs-5" id="label-user">Contraseña</label>
+            <input type="password" class="form-control border-success border-opacity-50" id="password" formControlName="contra" required> <br>
+            <div class="color-validator" *ngIf="contactForm.get('contra')?.touched && contactForm.get('contra')?.errors?.['invalid']">
+                Contraseña incorrecto
+             </div>
+             <div class="color-validator" *ngIf="contactForm.get('contra')?.errors?.['required']">
+                Este campo es requerido
+             </div>
+            <label for="phone" class="form-label fs-5" id="label-pass">Telefono</label>
+            <input type="tel" class="form-control border-success border-opacity-50" id="phone" formControlName="telefono" required> <br>
+            <div class="color-validator" *ngIf="contactForm.get('telefono')?.touched && contactForm.get('telefono')?.errors?.['invalid']">
+                Telefono incorrecto
+             </div>
+             <div class="color-validator" *ngIf="contactForm.get('telefono')?.errors?.['required']">
+                Este campo es requerido
+             </div>
+            <label for="city" class="form-label fs-5" id="label-user">Ciudad</label>
+            <input type="text" class="form-control border-success border-opacity-50" id="city" formControlName="ciudad" required> <br>
+            <div class="color-validator" *ngIf="contactForm.get('ciudad')?.touched && contactForm.get('ciudad')?.errors?.['invalid']">
+                Ciudad incorrecto
+             </div>
+             <div class="color-validator" *ngIf="contactForm.get('ciudad')?.errors?.['required']">
+                Este campo es requerido
+             </div>
+            <label for="province" class="form-label fs-5" id="label-user">Provincia</label>
+            <input type="text" class="form-control border-success border-opacity-50" id="province" formControlName="provincia" required> <br>
+            <div class="color-validator" *ngIf="contactForm.get('provincia')?.touched && contactForm.get('provincia')?.errors?.['invalid']">
+                Provincia incorrecto
+             </div>
+             <div class="color-validator" *ngIf="contactForm.get('provincia')?.errors?.['required']">
+                Este campo es requerido
+             </div>
+            <label for="country" class="form-label fs-5" id="label-pass">País</label>
+            <input type="text" class="form-control border-success border-opacity-50" id="country" formControlName="pais" required> <br>
+            <div class="color-validator" *ngIf="contactForm.get('pais')?.touched && contactForm.get('pais')?.errors?.['invalid']">
+                Pais incorrecto
+             </div>
+             <div class="color-validator" *ngIf="contactForm.get('pais')?.errors?.['required']">
+                Este campo es requerido
+             </div>
+            <div  class="register-button-flex">
+                <input class="contact-button" type="submit" value="Enviar" id="botonContacto">
+            </div>
+        </form>
+    </div>
+</div>
+<app-footer></app-footer>

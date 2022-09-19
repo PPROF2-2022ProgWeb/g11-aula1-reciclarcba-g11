@@ -1,0 +1,575 @@
+@import "~bootstrap/dist/css/bootstrap.css";
+
+.color-validator{
+    color: rgb(181, 5, 5);
+    margin-top: -10px;
+    margin-bottom: 10px;
+  }
+
+.login {
+    background-image: url("../../../assets/img/Sendero.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 600px;
+  }
+  
+  .login .title-login {
+    font-size: 24px;
+    color: #fff;
+    margin-bottom: 40px;
+  }
+  
+  .login .box-login {
+    background-color: #ffffff2f;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 35%;
+    height: 75%;
+    border-radius: 15px;
+    -webkit-backdrop-filter: blur(8px);
+            backdrop-filter: blur(8px);
+  }
+  
+  .login .box-login .form-login {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  
+  .login .box-login .form-login .label {
+    font-size: 20px;
+  }
+  
+  .login .box-login .form-login .formulario {
+    margin: 10px 0;
+    width: 300px;
+    height: 35px;
+    border: none;
+    -webkit-box-shadow: 0px 1px 5px #88bb3a;
+            box-shadow: 0px 1px 5px #88bb3a;
+    border-radius: 10px;
+    padding-left: 12px;
+  }
+  
+  .login .box-login .form-login .formulario:focus {
+    outline: 1px solid #88bb3a;
+  }
+  
+  .login .box-login .form-login .boton {
+    margin: 10px 0;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 15px;
+    background-color: #88bb3a;
+    font-size: 16px;
+    font-weight: 500;
+  }
+  
+  .login .box-login .form-login .boton:hover {
+    background-color: #517023;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  .login .box-login .link {
+    text-decoration: none;
+    font-weight: 500;
+  }
+  
+  .login .box-login .link:hover {
+    color: #517023;
+    cursor: pointer;
+    text-decoration: underline;
+  }
+
+  @media (min-width: 768px) {
+    * {
+        margin: 0px;
+        padding: 0px; 
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; 
+        color: black;
+    }
+
+    header {
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center;
+        position: relative;
+    
+        .navbar-flex {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #181818;
+            opacity: 0.9;
+            width: 100%;
+            height: 79px;
+    
+            .logo-img {
+                margin: 0 30px;
+            }
+    
+            .navbar-style {
+                margin: 0 25px;
+    
+                ul {
+                    display: flex;
+                    align-items: center;
+                    margin: 0;
+                    padding: 0;
+    
+                    li {
+                        list-style: none;
+                        
+                        .navlink {
+                            text-decoration: none;
+                            color: beige;
+                            margin: 0 10px;
+                            text-transform: uppercase;
+                            font-size: 10.5px;
+                        }
+    
+                        .navlink:active {
+                            opacity: 0.5;
+                        }
+                    }
+    
+                    .select-language {
+                        background-color: #181818;
+                        border: none;
+                        color: #fff;
+                        outline: none;
+                        font-size: 1em;
+                        margin-left: 20px;
+    
+                        .idioma {
+                            color: #fff;
+                            font-size: 1em;
+                        }
+                    }
+                }
+            }
+
+            .btn-menu {
+                display: none;
+            }
+        }
+    }
+
+    .login {
+        background-image: url('../../../assets/img/Sendero.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        height: 550px;
+    
+    
+        .title-login {
+            font-size: 24px;
+            color: #fff;
+            margin-bottom: 40px;
+        }
+    
+        .box-login {
+            background-color: #ffffff2f;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            width: 50%;
+            height: 75%;
+            border-radius: 15px;
+            backdrop-filter: blur(8px);
+    
+            .form-login {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                width: 70%;
+               
+    
+                .label {
+                    font-size: 20px;
+                }
+    
+                .formulario {
+                    margin: 5px 0;
+                    width: 275px;
+                    height: 35px;
+                    border: none;
+                    box-shadow: 0px 1px 5px #88bb3a;
+                    border-radius: 10px;
+                    padding-left: 12px;
+                }
+                .formulario:focus {
+                    outline: 1px solid #88bb3a;
+                }
+
+                .form-control:focus {
+                    border-color: #28a745;
+                    box-shadow: 0 0 0 0.2rem #87bb3a7e;
+                }
+    
+                .boton {
+                    margin: 10px 0;
+                    border: none;
+                    padding: 10px 25px;
+                    border-radius: 15px;
+                    background-color: #88bb3a;
+                    font-size: 16px;
+                    font-weight: 500;
+                }
+                .boton:active {
+                    background-color: #517023;
+                    color: #fff;
+                    cursor: pointer;
+                }
+            }
+    
+           
+    
+            .link {
+                text-decoration: none;
+                font-weight: 500;
+                color: #181818;
+            }
+            .link:active {
+                color: #fff;
+                cursor: pointer;
+                text-decoration: underline;
+            }
+        }
+    
+    }
+
+    .footer {
+        background-color: #293133;
+        
+        .footer-flex {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            margin: 0 80px;
+    
+            .left {
+                margin: 50px 0;
+    
+                .left-main-text {
+                    text-align: center;
+                    color: #fff;
+                    font-size: 26px;
+                }
+                .left-text {
+                    color: #fff;
+                    text-align: center;
+                    margin: 15px 5px;
+                }
+            }
+            .right {
+    
+                .right-text {
+                    text-align: center;
+                    color: #fff;
+                    font-size: 26px;
+    
+    
+                }
+                .social-contact {
+    
+                    .img-social-contact {
+                        width: 60px;
+                        margin: 15px 5px;
+                    }
+                    .img-social-contact:active {
+                        opacity: 0.5;
+                    }
+                }
+            }
+        }
+
+        .hr-footer {
+            margin: 0 auto;
+            opacity: 0.5;
+            color: #fff;
+            
+        }
+        
+        .copyright {
+            color: #fff;
+            text-align: center;
+            padding: 30px 0;
+        }    
+    }
+}
+
+// LAPTOP
+
+@media (min-width: 1200px) {
+    * {
+        margin: 0px;
+        padding: 0px; 
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; 
+        color: black;
+    }
+    
+    header {
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center;
+        position: relative;
+    
+        .navbar-flex {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #181818;
+            opacity: 0.9;
+            width: 100%;
+            height: 104px;
+    
+            .logo-img {
+                margin: 0 30px;
+                width: 100px;
+            }
+    
+            .navbar-style {
+                margin: 0 50px;
+    
+                ul {
+                    display: flex;
+                    align-items: center;
+                    margin: 0;
+                    padding: 0;
+    
+                    li {
+                        list-style: none;
+                        
+                        .navlink {
+                            text-decoration: none;
+                            color: beige;
+                            margin: 0 10px;
+                            text-transform: uppercase;
+                            font-size: 14px;
+                            letter-spacing: 0.5px;
+                        }
+    
+                        .navlink:hover {
+                            opacity: 0.5;
+                        }
+                    }
+    
+                    .select-language {
+                        background-color: #181818;
+                        border: none;
+                        color: #fff;
+                        outline: none;
+                        font-size: 1em;
+                        margin-left: 35px;
+    
+                        .idioma {
+                            color: #fff;
+                            font-size: 1em;
+                        }
+                    }
+                }
+            }
+
+            .btn-menu {
+                display: none;
+            }
+        }
+    }
+    
+    .login {
+        background-image: url('../../../assets/img/Sendero.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        height: 600px;
+    
+    
+        .title-login {
+            font-size: 24px;
+            color: #fff;
+            margin-bottom: 40px;
+        }
+    
+        .box-login {
+            background-color: #ffffff2f;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            width: 35%;
+            height: 75%;
+            border-radius: 15px;
+            backdrop-filter: blur(8px);
+            margin: 0;
+            padding: 0;
+    
+            .form-login {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                width: 70%;
+             
+    
+                .label {
+                    font-size: 20px;
+                    height: 27px;
+                }
+    
+                .formulario {
+                    margin: 10px 0;
+                    width: 300px;
+                    height: 35px;
+                    border: none;
+                    box-shadow: 0px 1px 5px #88bb3a;
+                    border-radius: 10px;
+                    padding-left: 12px;
+                }
+                .formulario:focus {
+                    outline: 1px solid #88bb3a;
+                }
+
+                .form-control:focus {
+                    border-color: #28a745;
+                    box-shadow: 0 0 0 0.2rem #87bb3a7e;
+                } 
+    
+                .boton {
+                    margin: 10px 0;
+                    border: none;
+                    padding: 10px 25px;
+                    border-radius: 15px;
+                    background-color: #88bb3a;
+                    font-size: 16px;
+                    font-weight: 500;
+                }
+                .boton:hover {
+                    background-color: #517023;
+                    color: #fff;
+                    cursor: pointer;
+                }
+            }
+    
+            .register-login {
+                margin: 0;
+            }
+    
+            .link {
+                color: #181818;
+                text-decoration: none;
+                font-weight: 500;
+            }
+            .link:hover {
+                color: #fff;
+                cursor: pointer;
+                text-decoration: underline;
+            }
+        }
+    }
+    
+    .footer {
+        background-color: #293133;
+        
+        .footer-flex {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            flex-direction: row;
+    
+            .left {
+                margin: 50px 0;
+    
+                .left-main-text {
+                    text-align: center;
+                    color: #fff;
+                    font-size: 26px;
+                }
+                .left-text {
+                    color: #fff;
+                    text-align: center;
+                    margin: 15px 5px;
+                }
+            }
+            .right {
+    
+                .right-text {
+                    text-align: center;
+                    color: #fff;
+                    font-size: 26px;
+    
+    
+                }
+                .social-contact {
+    
+                    .img-social-contact {
+                        width: 60px;
+                        margin: 15px 5px;
+                    }
+                    .img-social-contact:hover {
+                        opacity: 0.5;
+                    }
+                }
+            }
+        }
+        .hr-footer {
+          margin: 0 auto;
+          opacity: 0.5;
+          color: #fff;  
+        }
+        .copyright {
+            color: #fff;
+            text-align: center;
+            padding: 30px 0;
+        }    
+    }
+}

@@ -8,6 +8,9 @@ import { LandingComponent } from './landing-page/landing.component';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
+import { FormComponent } from './form/form.component';
+import { RegistroComponent } from './registro/registro.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
@@ -15,10 +18,12 @@ export function HttpLoaderFactory(http: HttpClient) {
 
 
 @NgModule({
-  declarations: [HeaderComponent, FooterComponent, SeccionInfoComponent, SeccionRecComponent, LandingComponent ],
+  declarations: [HeaderComponent, FooterComponent, SeccionInfoComponent, SeccionRecComponent, LandingComponent, FormComponent, RegistroComponent ],
   imports: [
     CommonModule,
     HttpClientModule,
+    FormsModule,
+    ReactiveFormsModule,
     TranslateModule.forRoot({
       defaultLanguage: 'en-US',
       loader: {
@@ -29,7 +34,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     })
   ], 
   exports: [
-    HeaderComponent, FooterComponent, SeccionInfoComponent, SeccionRecComponent, LandingComponent
+    HeaderComponent, FooterComponent, SeccionInfoComponent, SeccionRecComponent, LandingComponent, FormComponent
   ]
 })
 export class LandingModule { }

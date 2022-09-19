@@ -1,0 +1,27 @@
+<app-header></app-header>
+<section class="login">
+    <p class="title-login">Iniciar Sesión</p>
+    <div class="box-login">
+        <form class="form-login" (ngSubmit)="onSubmit()" [formGroup]="contactForm">
+            <label class="label" id="label" for="nombre">Usuario</label> <br>
+            <input class="formulario" type="text" name="nombre" id="nombre" formControlName="name" required> <br>
+            <div class="color-validator" *ngIf="contactForm.get('name')?.touched && contactForm.get('name')?.errors?.['invalid']">
+                Usuario incorrecto
+             </div>
+             <div class="color-validator" *ngIf="contactForm.get('name')?.errors?.['required']">
+                Este campo es requerido
+             </div>
+            <label class="label" for="password" id="label"> Contraseña </label> <br>
+            <input class="formulario password" type="password" id="password" name="password" formControlName="contraseña" required> <br> 
+            <div class="color-validator" *ngIf="contactForm.get('contraseña')?.touched && contactForm.get('contraseña')?.errors?.['invalid']">
+                Contraseña incorrecto
+             </div>
+             <div class="color-validator" *ngIf="contactForm.get('contraseña')?.errors?.['required']">
+                Este campo es requerido
+             </div>         
+            <button class="boton" type="submit" name="login">Iniciar Sesión </button> <br>
+        </form>    
+        <p class="register-login">¿No tienes una cuenta? <a href="formulario.html" class="register-login link">Registrate aquí</a> </p>
+    </div>        
+</section>
+<app-footer></app-footer>

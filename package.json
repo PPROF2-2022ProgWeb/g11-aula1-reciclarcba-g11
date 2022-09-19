@@ -20,7 +20,9 @@
     "@angular/router": "^14.0.0",
     "@ngx-translate/core": "^14.0.0",
     "@ngx-translate/http-loader": "^7.0.0",
+    "bootstrap": "^5.2.1",
     "rxjs": "~7.5.0",
+    "source-map-support": "^0.5.21",
     "tslib": "^2.3.0",
     "zone.js": "~0.11.4"
   },

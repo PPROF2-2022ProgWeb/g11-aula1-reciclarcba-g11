@@ -5,6 +5,7 @@ import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { LandingComponent } from './landing/landing-page/landing.component';
 import { LandingModule } from './landing/landing.module';
 
 export function HttpLoaderFactory(http: HttpClient) {

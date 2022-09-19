@@ -1,22 +1,25 @@
 <header id="header" class="header">
     <div class="navbar-flex">
         <a href="index.html"><img src="../.../../../assets/img/logo_index.png" class="logo-img" width="100px" id="img"></a>
-        <nav id="navbar-style" class="navbar-style">
+        <nav id="navbar-style" #navbarStyle class="navbar-style">
             <ul>
             <li><a class= "navlink"  href="index.html"> {{ 'inicio' | translate }}</a></li>
-            <li><a class= "navlink"  href="iniciosesion.html">{{ 'inicio_sesion' | translate }}</a></li>
-            <li><a class= "navlink"  href="Formulario.html">{{ 'registro' | translate }}</a></li>
+            <li><a class= "navlink"  (click)="redirigirLogin()"  >{{ 'inicio_sesion' | translate }} </a></li>
+            <li><a class= "navlink"  (click)="redirigirRegister()" >{{ 'registro' | translate }}</a></li>
             <li><a class= "navlink"  href="Blog.html">Blog</a></li>
             <li><a class= "navlink"  href="Contacto.html">{{ 'contacto' | translate }}</a></li>
             <li><a class= "navlink"  href="#"><img src="../../assets/img/bag-156780_960_720.png" alt="Tienda" style="width: 30px;"></a></li>  
                 <select (change)="selectLanguage($event)" class="language-picker">
                     <option class="language-picker-one" value="es-ES">Español</option>
                     <option selected class="language-picker-two" value="en-US">Ingles</option>
-                </select>           
+                </select>                  
             </ul>
         </nav>   
+        <button id="btn-menu" class="btn-menu" (click)="burgerOn()">
+            <i class="fa-solid fa-bars button-burger" id="menu-button" #menuButton></i>
+        </button> 
     </div>
-    <section class="main">
+    <!--  <section class="main">
         <div class="main-flex">
             <p class="hashtag">{{ 'hashtag' | translate }}</p>
             <p class="big-text"><strong>{{ 'Acronimo' | translate }}</strong>{{ 'recicla' | translate }}, <strong>{{ 'Acronimo' | translate }}</strong>{{ 'reuse' | translate }}, <strong>{{ 'Acronimo' | translate }}</strong>{{ 'reduces' | translate }}, <br> <strong>{{ 'Acronimo' | translate }}</strong>{{ 'repair' | translate }}...</p>
@@ -28,5 +31,5 @@
         <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
         <path d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: #fff;"></path>
         </svg>
-    </div>
+    </div>  -->
 </header>
